@@ -1,0 +1,22 @@
+<p>updateproduct works!</p>
+<h3>Update Product</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Product Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="product.name" name="productname">
+    </div>
+
+    <div class="form-group">
+      <label for="number">Product quantity</label>
+      <input type="number" class="form-control" id="quantity" required [(ngModel)]="product.quantity" name="productquantity">
+    </div>
+
+    <div class="form-group">
+      <label for="number">Product price</label>
+      <input type="number" class="form-control" id="price" required [(ngModel)]="product.price" name="productprice">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
